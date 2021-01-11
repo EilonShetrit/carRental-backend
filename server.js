@@ -32,8 +32,12 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 
+const carRoutes = require('./api/car/car.routes')
+// const userRoutes = require('./api/user/user.routes')
 
-
+// routes
+app.use('/api/car', carRoutes)
+// app.use('/api/user',userRoutes)
 
 
 
